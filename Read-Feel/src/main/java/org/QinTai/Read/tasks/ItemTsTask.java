@@ -32,7 +32,7 @@ public class ItemTsTask {
     @Scheduled(fixedDelay = 1000 * 60)
     public void process() throws Exception {
         String url = "https://xiaoshuo.sogou.com/29_0_0_0_heat/?pageNo=";
-        for (int i =101; i <201; i++) {
+        for (int i =601; i <647; i++) {
             //发起请求访问页面
             System.out.println("第" + (c++) + "页");
             String html = httpClientUtlis.pareHtml(url + i);
